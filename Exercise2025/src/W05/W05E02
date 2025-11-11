@@ -1,0 +1,19 @@
+package w05;
+
+import java.util.Scanner;
+
+public class RevisionCode {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int number;
+        int sum = 0;
+
+        do {
+            System.out.print("enter a number (0 to stop): ");
+            number = input.nextInt();
+            sum += number;
+        } while (number != 0);  
+
+        System.out.println("the total sum is: " + sum);
+    }
+}
